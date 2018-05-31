@@ -1,4 +1,4 @@
-﻿New-Item -Path HKCU:\Software\Microsoft\Internet Explorer\Spartan –Force 
+﻿New-Item -Path "HKCU:\Software\Microsoft\Internet Explorer\Spartan" –Force 
 $registryPath = "HKCU:\Software\Microsoft\Internet Explorer\Spartan"
 
 #Fix Edge on 1803 with WDAG or Applocker enabled
