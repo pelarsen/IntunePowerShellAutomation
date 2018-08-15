@@ -1378,10 +1378,10 @@ $sleep = 30
 
 #### MSI Install Google Chrome Enterprise x64
 $output = "$PSScriptRoot\googlechromestandaloneenterprise64.msi"
-Start-BitsTransfer -Source https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B19197EBE-285D-1523-F175-0E01513F2E5E%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_1%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi?_ga=2.62329514.743626727.1522651195-1647266160.1522651195 -Destination $output
+Start-BitsTransfer -Source https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi -Destination $output
 Upload-MSILob "$output" -publisher "Google" -description "Google Chrome Enterprise x64"
 
 #### MSI Install Google Chrome Enterprise x32
-$output = "$PSScriptRoot\/AzInfoProtection_PREVIEW_1.21.203.0_MSI_for_central_deployment.msi"
-Start-BitsTransfer -Source https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B19197EBE-285D-1523-F175-0E01513F2E5E%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dstable-arch_x86-statsdef_1%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise.msi?_ga=2.71766293.743626727.1522651195-1647266160.1522651195 -Destination $output
+$output = "$PSScriptRoot\googlechromestandaloneenterprise.msi"
+Start-BitsTransfer -Source https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi -Destination $output
 Upload-MSILob "$output" -publisher "Google" -description "Google Chrome Enterprise x32"
